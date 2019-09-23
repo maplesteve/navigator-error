@@ -1,0 +1,23 @@
+{
+  "name": "navigator_error",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^16.30.0",
+    "serverless": "^1.52.2",
+    "serverless-webpack": "^5.3.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2"
+  },
+  "devDependencies": {
+    "serverless-offline": "^5.11.0",
+    "ts-loader": "^6.1.2"
+  }
+}

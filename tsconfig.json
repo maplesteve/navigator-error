@@ -1,0 +1,26 @@
+{
+    "include": [
+        "./*"
+    ],
+    "exclude": [
+        "node-modules"
+    ],
+    "compilerOptions": {
+        "outDir": "./built",
+        "target": "es2017",
+        "module": "commonjs",
+        "sourceMap": true,
+        "allowJs": false,
+        "checkJs": false,
+        "lib": [
+            "es2017"
+        ],
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true
+    },
+    "typeAcquisition": {
+        "enable": true
+    }
+}

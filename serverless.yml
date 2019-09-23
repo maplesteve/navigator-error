@@ -1,0 +1,28 @@
+service:
+  name: navigator-error
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+custom:
+  webpack:
+    includeModules:
+      forceExclude:
+        - aws-sdk
+
+provider:
+  name: aws
+  stackName: navigator-error
+  runtime: nodejs8.10
+  memorySize: 512
+  region: eu-central-1
+
+functions:
+  testme:
+    handler: handler.handler
+    events:
+      - http:
+          path: /testme
+          method: get
+          cors: true
